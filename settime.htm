@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>settime : </h1>
+    <h2 id="output">Frontend : </h2>
+
+
+    <script>
+        let output = document.getElementById("output")
+
+        let interval = setInterval(function () {
+            output.textContent = "Ram";
+        }, 2000);
+
+        setTimeout(function () {
+            clearInterval(interval)
+            output.innerText = "Ayush"
+            // console.log(output)
+        }, 10000);
+    </script>
+</body>
+
+</html>
